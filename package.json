@@ -1,0 +1,22 @@
+{
+  "name": "weather-app-course",
+  "version": "1.0.0",
+  "description": "Some weather app from udemy course\r use 'npm i' before start",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whymeoff/weather-app-course.git"
+  },
+  "author": "Mark K.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whymeoff/weather-app-course/issues"
+  },
+  "homepage": "https://github.com/whymeoff/weather-app-course#readme",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
+}
