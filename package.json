@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/whymeoff/weather-app-course#readme",
   "dependencies": {
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "yargs": "^15.1.0"
   }
 }
