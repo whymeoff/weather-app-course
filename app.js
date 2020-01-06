@@ -13,15 +13,15 @@ yargs.command({
         }
     },
     handler: (argv) => {
-        geoLocation(argv.place, (err, data) => {
+        geoLocation(argv, (err, { lat, long }) => {
             if (err) {
                 console.log(err);
             } else {
-                forecast(data.lat, data.long, (err, data) => {
+                forecast(lat, long, (err, {temp, maxTemp, precipProbability}) => {
                     if (err) {
                         console.log(err);
                     } else {
-                        console.log(`Current temperature is: ${data.temp}. Max temperature is: ${data.maxTemp}. Chance of rain today is: ${data.precipProbability}%`);
+                        console.log(`Current temperature is: ${temp}. Max temperature is: ${maxTemp}. Chance of rain today is: ${precipProbability}%`);
                     }
                 })
             }
