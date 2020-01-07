@@ -13,11 +13,11 @@ yargs.command({
         }
     },
     handler: (argv) => {
-        geoLocation(argv, (err, { lat, long }) => {
+        geoLocation(argv, (err, data) => {
             if (err) {
                 console.log(err);
             } else {
-                forecast(lat, long, (err, {temp, maxTemp, precipProbability}) => {
+                forecast(data.lat, data.long, (err, {temp, maxTemp, precipProbability}) => {
                     if (err) {
                         console.log(err);
                     } else {
